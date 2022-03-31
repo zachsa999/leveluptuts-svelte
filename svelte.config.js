@@ -4,7 +4,7 @@ import mdsvexConfig from './mdsvex.config.js';
 
 /** @type {import('@sveltejs/kit').Config} */
 import sveltePreprocess from 'svelte-preprocess';
-import adapter from '@sveltejs/adapter-static';
+import adapter from '@sveltejs/adapter-node';
 
 
 const config = {
@@ -21,15 +21,15 @@ const config = {
 		//added below
 
 		adapter: adapter(),
-		prerender: {
-			// concurrency: 1,
-			// crawl: true,
-			default: true,
-			// enabled: true,
-			// entries: ['*'],
-			// onError: 'fail'
-		},
-		trailingSlash: 'always',
+		// prerender: {
+		// 	// concurrency: 1,
+		// 	// crawl: true,
+		// 	default: true,
+		// 	// enabled: true,
+		// 	// entries: ['*'],
+		// 	// onError: 'fail'
+		// },
+		// trailingSlash: 'always',
 	},
 
 };
